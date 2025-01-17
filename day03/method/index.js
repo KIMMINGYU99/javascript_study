@@ -18,3 +18,8 @@ const word = prompt("단어 대라");
 const result =
   word == word.toUpperCase() ? word.toLowerCase() : word.toUpperCase();
 alert(result);
+
+const a = "ice".repeat(3); // 반복 - ice ice ice
+"americano".replaceAll("a", "k"); // 바꾸기 - kamerickno
+"icecream".slice(1, 4); // 자르기 - cec
+"icecream".length; // 글자 길이 - 7
