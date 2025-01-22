@@ -5025,22 +5025,20 @@ const exchange = (x) =>
   Number(x.money.split("$")[1]) * 1434.98 <= 1000000;
 
 const exchangeArr = data.filter(exchange);
-const exchangePerson = (x) => {
-  return {
-    name: x.name,
-    creditCard: x.creditCard,
-    email: x.email,
-  };
-};
+const exchangePerson = (x) => ({
+  name: x.name,
+  creditCard: x.creditCard,
+  email: x.email,
+});
+
 console.log(exchangeArr.map(exchangePerson));
 
 // quiz 4
-const langAndCurrency = (x) => {
-  return {
-    language: x.language,
-    currency: x.currency,
-  };
-};
+const langAndCurrency = (x) => ({
+  language: x.language,
+  currency: x.currency,
+});
+
 console.log(data.map(langAndCurrency));
 
 // quiz 5
