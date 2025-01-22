@@ -5044,8 +5044,8 @@ console.log(data.map(langAndCurrency));
 // quiz 5
 const remake = (x) => {
   x.name = x.name.split(" ")[0];
-  x.email = x.email.split(".")[0];
-  x.Number = x.creditCard.slice(0, 4);
+  x.email = x.email.split("@")[0];
+  x.creditCard = x.creditCard.slice(0, 4);
   return x;
 };
 
